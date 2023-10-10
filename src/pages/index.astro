@@ -1,16 +1,19 @@
 ---
+import Form from "@components/Form/Form";
 import Container from "@components/container.astro";
 import Cta from "@components/cta.astro";
 import Features from "@components/features.astro";
+
 import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout title="">
+<Layout title="Crea QRs y lonks para whatsapp">
   <Container>
     <Hero />
     <Features />
+    <Form client:visible />
     <Logos />
     <Cta />
   </Container>

@@ -18,37 +18,36 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title : "Whalink Ecuador";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="generator" content={'wha.link'} />
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Transforma la forma en que te conectas en WhatsApp. Genera enlaces y códigos QR personalizados para iniciar conversaciones directas con un solo clic. Simplifica el intercambio de números de teléfono y lleva tus conversaciones al siguiente nivel. ¡Experimenta la comodidad y la elegancia con nuestra herramienta única! Prueba ahora"
       canonical={canonicalURL}
       twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
+        creator: "@gp13_",
+        site: "@whalink",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Whalink  - Potencia tus conversaciones en WhatsApp con enlaces y códigos QR personalizados. La forma más rápida y elegante de iniciar chats directos.`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Whalink Homepage Screenshot",
         },
       }}
     />
